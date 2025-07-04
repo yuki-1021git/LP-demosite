@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>LP デモサイト</title>
+    <meta name="description" content="テキストテキストテキストテキストテキストテキストテキストテキスト">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/jquery.inview.min.js"></script>
+    <script src="main.js"></script>
+  </head>
+
+  <body>
+  <header id="header">
+    <div class="header-top">
+    <img class="logo" src="img/logo1.png" alt="">
+      <p class="company-sales">
+      業界大手<br>
+      SEO代行業者<br>
+      執筆代行・サイト運営</p>
+
+      <img class="tell-img" src="img/AdobeStock_594103350.png" alt="">
+      <p class="tell">お電話でのお問い合わせ<br>
+         <span class="phone-number">
+    <a href="tel:03-1234-5678">03-1234-5678</a>
+  </span>
+      </p>
+
+      <button class="plan-btn">無料 資料請求はこちら</button>
+    </div>
+
+    <div class="header-menu">
+      <ul class="menu-list">
+        <li>|<a href="#top">TOP</a></li>
+        <li>|<a href="#voice">お客様の声</a></li>
+        <li>|<a href="#question">よくある質問</a></li>
+        <li>|<a href="#company">会社概要</a></li>
+        <li>|<a href="#plan">資料</a></li>
+        <li>|<a href="#gide">ガイド</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+
+    <section id="top">
+      <img class="top-img" src="img/01.png" alt="">
+
+      <p><span>新規の事業立ち上げから</span>から<br>
+      <span>既存の事業、プロジェクトの改善</span>まで</p>
+      <img class="project" src="img/project.png" alt="">
+
+      
+       <!-- スライダー追加 -->
+          <!-- スライダー追加 -->
+      <div class="slider-wrapper">
+        <button class="slider-btn prev-btn">‹</button>
+        <div class="slider-container">
+          <div class="slider">
+            <div class="slide active">
+              <img src="img/slider01.jpg" alt="スライド1">
+            </div>
+            <div class="slide">
+              <img src="img/slider02.jpg" alt="スライド2">
+            </div>
+            <div class="slide">
+              <img src="img/slider03.jpg" alt="スライド3">
+            </div>
+            <div class="slide">
+              <img src="img/slider04.jpg" alt="スライド4">
+            </div>
+            <div class="slide">
+              <img src="img/slider05.jpg" alt="スライド5">
+            </div>
+          </div>
+        </div>
+        <button class="slider-btn next-btn">›</button>
+      </div>
+      
+      <!-- ページボタン -->
+      <div class="slider-dots">
+        <button class="dot active" data-slide="0">1</button>
+        <button class="dot" data-slide="1">2</button>
+        <button class="dot" data-slide="2">3</button>
+        <button class="dot" data-slide="3">4</button>
+        <button class="dot" data-slide="4">5</button>
+      </div>
+
+      <div class="grid">
+        <img class="grid-img" src="img/hukidashi 1.jpg" alt="">
+        <h2 class="grid-title">業界TOPクラス</h2>
+
+        <table class="comparison-table">
+          <thead>
+            <tr>
+              <th class="company-header">比較項目</th>
+              <th class="feature-header">コスト</th>
+              <th class="feature-header">クオリティ</th>
+              <th class="feature-header">スピード</th>
+              <th class="feature-header">実績</th>
+              <th class="feature-header">サポート</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="our-company">
+              <td class="company-name">当社</td>
+              <td class="good">◎</td>
+              <td class="good">◎</td>
+              <td class="good">◎</td>
+              <td class="good">◎</td>
+              <td class="good">◎</td>
+            </tr>
+            <tr>
+              <td class="company-name">A社</td>
+              <td class="average">○</td>
+              <td class="poor">△</td>
+              <td class="poor">△</td>
+              <td class="average">○</td>
+              <td class="average">○</td>
+            </tr>
+            <tr>
+              <td class="company-name">B社</td>
+              <td class="poor">△</td>
+              <td class="average">○</td>
+              <td class="poor">△</td>
+              <td class="poor">△</td>
+              <td class="poor">△</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="mini-contact">
+        <div class="profile">
+          <div class="my-profile">
+          <h3>
+            はじめまして。<br>
+            フリーランスとして活動しています。ユウキといいます。
+          </h3>
+          <p>このデモサイトが気になった方はご気軽にご連絡ください。</p>
+          </div>
+        </div>
+    
+        <div class="access">
+          <button class="access-btn">
+            <a href=""><img class="access-img" src="img/AdobeStock_594103350.png" alt="">
+              CONTACT
+            </a></button>
+        </div>
+      </div>
+      </div>
+ </section>
+      <section class="sec-select">
+        <div class="bg">
+          <div class="container">
+            <p>安定的な集客は簡単ではありません。</p>
+            <h2>
+              弊社では<span>納品後もしっかりサポート。</span>
+            </h2>
+          </div>
+        </div>
+
+        <div class="block01">
+          <div class="block-title">
+            <p class="block-text01">課題</p>
+            <p class="block-text02">提案</p>
+          </div>
+
+          <div class="main-text">
+            <p class="main-text-01">
+            webサイトの更新をマンネリさせない
+            </p>
+
+            <p class="main-text-02">blog機能を活用！</p>
+          </div>
+
+          <div class="block-image">
+            <img src="img/desk.png" alt="ブログ機能イメージ">
+          </div>
+        </div>
+
+        <div class="block02">
+          <div class="block-title">
+            <p class="block-text01">課題</p>
+            <p class="block-text02">提案</p>
+          </div>
+
+          <div class="main-text">
+            <p class="main-text-01">
+            SEO対策に時間がかかりすぎる
+            </p>
+
+            <p class="main-text-02">AI分析ツールで効率化！</p>
+          </div>
+
+          <div class="block-image">
+            <img src="img/graph.png" alt="AI分析ツールイメージ">
+          </div>
+        </div>
+
+        <div class="block03">
+          <div class="block-title">
+            <p class="block-text01">課題</p>
+            <p class="block-text02">提案</p>
+          </div>
+
+          <div class="main-text">
+            <p class="main-text-01">
+            コンテンツの質を維持できない
+            </p>
+
+            <p class="main-text-02">専門ライターチームが対応！</p>
+          </div>
+
+          <div class="block-image">
+            <img src="img//writer 1.png" alt="ライターチームイメージ">
+          </div>
+        </div>
+      </section>
+
+      <section id="three-content">
+        <div class="bg">
+          <div class="wrapper">
+            <div class="inner">
+              <h2 class="content-title">
+                <span class="filter">"伝えたい"</span>を<span class="rial">"伝わる"</span>に
+              </h2>
+              <h3 class="sub-title">伝えたかった思いが伝わる<span>コンテンツ制作</span></h3>
+            </div>
+          </div>
+        </div>
+
+          <div class="content-flex">
+            <div class="content-box01">
+              <div class="box-title">
+                <h4>サンプルno.1</h4>
+              </div>
+              <div class="box-img">
+                <img class="box-img-1" src="img/sample01.jpg " alt="">
+              </div>
+              <h4 class="box-subtitle">新規のサイト制作</h4>
+              <p class="box-text">新規の事業、プロジェクトにともない<br>
+              サイトの解説。スタートからアフターまでしっかりサポート。</p>
+            </div>
+
+            <div class="content-box02">
+              <div class="box-title">
+                <h4>サンプルno.2</h4>
+              </div>
+              <div class="box-img">
+                <img class="box-img-2" src="img/sample02 1.jpg " alt="">
+              </div>
+              <h4 class="box-subtitle">既存サイトの改善</h4>
+              <p class="box-text">既存のサイトの問題点を分析し、<br>
+              ユーザビリティを向上させる改善提案を実施。</p>
+            </div>
+
+            <div class="content-box03">
+              <div class="box-title">
+                <h4>サンプルno.3</h4>
+              </div>
+              <div class="box-img">
+                <img class="box-img-3" src="img/sample03.jpg" alt="">
+              </div>
+              <h4 class="box-subtitle">SEO対策・運用</h4>
+              <p class="box-text">検索エンジン最適化と継続的な<br>
+              コンテンツ更新で集客力を向上させます。</p>
+            </div>
+          </div>
+
+          <div class="content-text-area">
+            <h3 class="text-area-title01"><span>集客につながる</span>サイト制作</h3>
+            <h3 class="text-area-title01"><span>継続的に解析</span>を行い、アフターサポート</h3>
+          </div>
+      
+          <!-- 円グラフセクション追加 -->
+           <div class="graph-wrapper">
+          <div class="pie-chart-section">
+            <div class="charts-container">
+              <!-- 円グラフ -->
+              <div class="chart-item">
+                <h3 class="chart-title">Webサイトの有無による信頼度比較</h3>
+                <div class="pie-chart-container">
+                  <div class="pie-chart">
+                    <div class="pie-center">
+                      <span class="pie-title">信頼度</span>
+                      <span class="pie-total">100%</span>
+                    </div>
+                  </div>
+                  <div class="pie-legend">
+                    <div class="legend-item">
+                      <span class="legend-color hp-exists"></span>
+                      <span>HPがある会社 79.8%</span>
+                    </div>
+                    <div class="legend-item">
+                      <span class="legend-color hp-none"></span>
+                      <span>HPがない会社 20.2%</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 棒グラフ -->
+              <div class="chart-item">
+                <h3 class="chart-title">更新されていないHPを見て思うこと</h3>
+                <div class="bar-chart-container">
+                  <div class="bar-chart">
+                    <div class="bar-item">
+                      <div class="bar-label">営業しているか不安</div>
+                      <div class="bar-wrapper">
+                        <div class="bar" data-percentage="49.8">
+                          <span class="bar-percentage">49.8%</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="bar-item">
+                      <div class="bar-label">載っている情報が正しいか不安</div>
+                      <div class="bar-wrapper">
+                        <div class="bar" data-percentage="35.3">
+                          <span class="bar-percentage">35.3%</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="bar-item">
+                      <div class="bar-label">すぐに対応されるか不安</div>
+                      <div class="bar-wrapper">
+                        <div class="bar" data-percentage="33.4">
+                          <span class="bar-percentage">33.4%</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="bar-item">
+                      <div class="bar-label">取引に躊躇する</div>
+                      <div class="bar-wrapper">
+                        <div class="bar" data-percentage="32.6">
+                          <span class="bar-percentage">32.6%</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+           </div>
+
+            <div class="wrapper">
+            <div class="marketing">
+              <p>
+                デジタル活用がビジネスの成果に直結する今、<br>
+                Webサイトは単なる情報掲載の場ではなく<br>
+                <span>信頼獲得</span>や<span>採用強化</span>、<span>販路拡大</span>など多くの効果が期待できる<span>経営資源です。</span><br>
+                貴社らしさを伝える手段として、Webサイトの立ち上げをご一緒にご提案できればと思います。
+              </p>
+            </div>
+           </div>
+      </section>
+    </main>
+
+    <footer id="footer">
+      <div class="footer-content">
+        <p>LPページのデモサイト</p>
+        <p>〒111-1111 福岡県XX市XX区11-11 XXビル</p>
+        <p class="contact">
+          Tel: 03-1111-1111<br>
+          E-mail: info@xxxxxxx.jp
+        </p>
+        <ul class="sns">
+          <li><a href="#" target="_blank">Twitter</a></li>
+          <li><a href="#" target="_blank">Facebook</a></li>
+          <li><a href="#" target="_blank">Instagram</a></li>
+        </ul>
+      </div>
+      <p class="copyright">
+        &copy; webデザイナー ユウキのデモサイト
+      </p>
+    </footer>
+  </body>
+</html>
