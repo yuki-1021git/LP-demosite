@@ -3,6 +3,12 @@ document.addEventListener('DOMContentLoaded', function() {
     const slides = document.querySelectorAll('.slide');
     const dots = document.querySelectorAll('.dot');
     const slider = document.querySelector('.slider');
+    const prevBtn = document.querySelector('.prev-btn');
+    const nextBtn = document.querySelector('.next-btn');
+
+    if (!slider || slides.length === 0) {
+        return;
+    }
     
     function showSlide(index) {
         currentSlide = index;
@@ -14,12 +20,12 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     
     // 矢印ボタンのイベント
-    document.querySelector('.prev-btn').addEventListener('click', () => {
+    if (prevBtn) prevBtn.addEventListener('click', () => {
         currentSlide = currentSlide > 0 ? currentSlide - 1 : slides.length - 1;
         showSlide(currentSlide);
     });
     
-    document.querySelector('.next-btn').addEventListener('click', () => {
+    if (nextBtn) nextBtn.addEventListener('click', () => {
         currentSlide = currentSlide < slides.length - 1 ? currentSlide + 1 : 0;
         showSlide(currentSlide);
     });

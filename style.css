@@ -35,6 +35,36 @@ li {
   list-style: none;
 }
 
+/* ===== 固定CTA（右下） ===== */
+.floating-cta {
+  position: fixed;
+  right: 30px;
+  bottom: 50px;
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  line-height: 1.2;
+  background: linear-gradient(135deg, #ff8e24 0%, #ff6b35 100%);
+  color: white;
+  font-weight: 700;
+  box-shadow: 0 8px 25px rgba(255, 142, 36, 0.35);
+  z-index: 9999;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.floating-cta:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px rgba(255, 142, 36, 0.45);
+}
+
+.floating-cta:active {
+  transform: translateY(0);
+}
+
 /* ===== ヘッダー ===== */
 #header {
   padding: 20px 0;
@@ -337,6 +367,10 @@ li {
 }
 
 .access-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
   background: linear-gradient(135deg, #ff8e24 0%, #ff6b35 100%);
   border: none;
   border-radius: 50px;
@@ -346,6 +380,10 @@ li {
   box-shadow: 0 6px 20px rgba(255, 142, 36, 0.3);
   position: relative;
   overflow: hidden;
+  color: white;
+  font-weight: 700;
+  font-size: 1.2em;
+  text-decoration: none;
 }
 
 .access-btn:hover {
@@ -371,17 +409,6 @@ li {
 
 .access-btn:hover::before {
   left: 100%;
-}
-
-.access-btn a {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  font-weight: 700;
-  font-size: 1.2em;
-  text-decoration: none;
-  gap: 10px;
 }
 
 .access-img {
@@ -511,11 +538,14 @@ li {
 .block-image {
   flex-shrink: 0;
   width: 250px;
+  aspect-ratio: 4 / 3;
 }
 
 .block-image img {
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
   border-radius: 10px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
@@ -1094,7 +1124,7 @@ li {
     padding: 12px 30px;
   }
   
-  .access-btn a {
+  .access-btn {
     font-size: 1.1em;
   }
   
@@ -1305,6 +1335,13 @@ li {
 
 /* 768px以下 */
 @media (max-width: 768px) {
+  .floating-cta {
+    width: 96px;
+    height: 96px;
+    right: 16px;
+    bottom: 16px;
+    font-size: 0.95em;
+  }
   .header-top {
     flex-direction: column;
     gap: 15px;
@@ -1352,6 +1389,11 @@ li {
   .slider-container {
     width: 90vw;
     height: 50vw;
+  }
+
+  .slide img {
+    object-fit: contain;
+    object-position: center;
   }
   
   .slider-btn {
@@ -1430,7 +1472,7 @@ li {
     padding: 12px 25px;
   }
   
-  .access-btn a {
+  .access-btn {
     font-size: 1em;
   }
   
@@ -1680,6 +1722,14 @@ li {
 
 /* 480px以下 */
 @media (max-width: 480px) {
+  .floating-cta {
+    width: 86px;
+    height: 86px;
+    right: 12px;
+    bottom: 12px;
+    font-size: 0.9em;
+  }
+
   .slider-container {
     width: 95vw;
     height: 55vw;
