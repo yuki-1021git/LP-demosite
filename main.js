@@ -6,6 +6,24 @@ document.addEventListener('DOMContentLoaded', function() {
     const prevBtn = document.querySelector('.prev-btn');
     const nextBtn = document.querySelector('.next-btn');
 
+    // デモ用のダミーリンクでページ上部へ戻らないようにする
+    document.querySelectorAll('a.js-noop').forEach((anchor) => {
+        anchor.addEventListener('click', (event) => {
+            event.preventDefault();
+        });
+    });
+
+    // 資料請求ボタンはページ内の資料エリアへ
+    const planBtn = document.querySelector('.plan-btn');
+    if (planBtn) {
+        planBtn.addEventListener('click', () => {
+            const target = document.querySelector('#plan');
+            if (target) {
+                target.scrollIntoView({ behavior: 'smooth' });
+            }
+        });
+    }
+
     if (!slider || slides.length === 0) {
         return;
     }

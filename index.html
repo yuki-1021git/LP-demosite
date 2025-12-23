@@ -17,28 +17,28 @@
   <body>
   <header id="header">
     <div class="header-top">
-    <img class="logo" src="img/logo1.png" alt="">
+    <img class="logo" src="img/logo1.png" alt="LP デモサイト ロゴ">
       <p class="company-sales">
       業界大手<br>
       SEO代行業者<br>
       執筆代行・サイト運営</p>
 
-      <img class="tell-img" src="img/名称未設定 1.png" alt="">
+      <img class="tell-img" src="img/名称未設定 1.png" alt="電話アイコン">
       <p class="tell">お電話でのお問い合わせ<br>
          <span class="phone-number">
     <a href="tel:03-1234-5678">03-1234-5678</a>
   </span>
       </p>
 
-      <button class="plan-btn">無料 資料請求はこちら</button>
+      <button class="plan-btn" type="button">無料 資料請求はこちら</button>
     </div>
 
     <div class="header-menu">
       <ul class="menu-list">
         <li>|<a href="#top">TOP</a></li>
-        <li>|<a href="#voice">お客様の声</a></li>
-        <li>|<a href="#question">よくある質問</a></li>
-        <li>|<a href="#company">会社概要</a></li>
+        <li>|<a href="#three-content">お客様の声</a></li>
+        <li>|<a href="#three-content">よくある質問</a></li>
+        <li>|<a href="#footer">会社概要</a></li>
         <li>|<a href="#plan">資料</a></li>
         <li>|<a href="#gide">ガイド</a></li>
       </ul>
@@ -48,17 +48,17 @@
   <main>
 
     <section id="top">
-      <img class="top-img" src="img/01.png" alt="">
+      <img class="top-img" src="img/01.png" alt="メインビジュアル">
 
-      <p><span>新規の事業立ち上げから</span>から<br>
+      <p><span>新規の事業立ち上げから</span><br>
       <span>既存の事業、プロジェクトの改善</span>まで</p>
-      <img class="project" src="img/project.png" alt="">
+      <img class="project" src="img/project.png" alt="プロジェクトイメージ">
 
       
        <!-- スライダー追加 -->
           <!-- スライダー追加 -->
       <div class="slider-wrapper">
-        <button class="slider-btn prev-btn">‹</button>
+        <button class="slider-btn prev-btn" type="button" aria-label="前のスライド">‹</button>
         <div class="slider-container">
           <div class="slider">
             <div class="slide active">
@@ -78,20 +78,20 @@
             </div>
           </div>
         </div>
-        <button class="slider-btn next-btn">›</button>
+        <button class="slider-btn next-btn" type="button" aria-label="次のスライド">›</button>
       </div>
       
       <!-- ページボタン -->
       <div class="slider-dots">
-        <button class="dot active" data-slide="0">1</button>
-        <button class="dot" data-slide="1">2</button>
-        <button class="dot" data-slide="2">3</button>
-        <button class="dot" data-slide="3">4</button>
-        <button class="dot" data-slide="4">5</button>
+        <button class="dot active" type="button" data-slide="0" aria-label="スライド1へ">1</button>
+        <button class="dot" type="button" data-slide="1" aria-label="スライド2へ">2</button>
+        <button class="dot" type="button" data-slide="2" aria-label="スライド3へ">3</button>
+        <button class="dot" type="button" data-slide="3" aria-label="スライド4へ">4</button>
+        <button class="dot" type="button" data-slide="4" aria-label="スライド5へ">5</button>
       </div>
 
       <div class="grid">
-        <img class="grid-img" src="img/hukidashi 1.jpg" alt="">
+        <img class="grid-img" src="img/hukidashi 1.jpg" alt="吹き出しイメージ">
         <h2 class="grid-title">業界TOPクラス</h2>
 
         <table class="comparison-table">
@@ -134,7 +134,7 @@
         </table>
       </div>
 
-      <div class="mini-contact">
+      <div class="mini-contact" id="plan">
         <div class="profile">
           <div class="my-profile">
           <h3>
@@ -146,14 +146,15 @@
         </div>
     
         <div class="access">
-          <a class="access-btn" href="#">
-            <img class="access-img" src="img/名称未設定 1.png" alt="">
+          <a class="access-btn" href="#plan">
+            <img class="access-img" src="img/名称未設定 1.png" alt="問い合わせアイコン">
             CONTACT
           </a>
         </div>
       </div>
  </section>
-      <section class="sec-select">
+
+      <section class="sec-select" id="gide">
         <div class="bg">
           <div class="container">
             <p>安定的な集客は簡単ではありません。</p>
@@ -239,7 +240,7 @@
                 <h4>サンプルno.1</h4>
               </div>
               <div class="box-img">
-                <img class="box-img-1" src="img/sample01.jpg" alt="">
+                <img class="box-img-1" src="img/sample01.jpg" alt="制作実績サンプル1">
               </div>
               <h4 class="box-subtitle">新規のサイト制作</h4>
               <p class="box-text">新規の事業、プロジェクトにともない<br>
@@ -251,7 +252,7 @@
                 <h4>サンプルno.2</h4>
               </div>
               <div class="box-img">
-                <img class="box-img-2" src="img/sample02 1.jpg" alt="">
+                <img class="box-img-2" src="img/sample02 1.jpg" alt="制作実績サンプル2">
               </div>
               <h4 class="box-subtitle">既存サイトの改善</h4>
               <p class="box-text">既存のサイトの問題点を分析し、<br>
@@ -263,7 +264,7 @@
                 <h4>サンプルno.3</h4>
               </div>
               <div class="box-img">
-                <img class="box-img-3" src="img/sample03.jpg" alt="">
+                <img class="box-img-3" src="img/sample03.jpg" alt="制作実績サンプル3">
               </div>
               <h4 class="box-subtitle">SEO対策・運用</h4>
               <p class="box-text">検索エンジン最適化と継続的な<br>
@@ -369,9 +370,9 @@
           E-mail: info@xxxxxxx.jp
         </p>
         <ul class="sns">
-          <li><a href="#" target="_blank">Twitter</a></li>
-          <li><a href="#" target="_blank">Facebook</a></li>
-          <li><a href="#" target="_blank">Instagram</a></li>
+          <li><a class="js-noop" href="#" target="_blank" rel="noopener noreferrer">Twitter</a></li>
+          <li><a class="js-noop" href="#" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+          <li><a class="js-noop" href="#" target="_blank" rel="noopener noreferrer">Instagram</a></li>
         </ul>
       </div>
       <p class="copyright">
@@ -379,6 +380,6 @@
       </p>
     </footer>
 
-    <a class="floating-cta" href="#top">無料で<br>資料請求</a>
+    <a class="floating-cta" href="#plan">無料で<br>資料請求</a>
   </body>
 </html>
